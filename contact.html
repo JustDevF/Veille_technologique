@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille-technologique</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet"><!--pour charger la police sur la page, on doit aller sur google fonts puis on copie le lien css de la police */-->
+
+    <!--Première bloc l'entête-->
+</head>  
+<body>   
+  <header class="topbar">
+     <a href="" class="topbar-logo" alt="Logo IOT"></a>
+     <img src="img/loco-iot-1.png" width="auto" height="80" class="topbar-iot" alt="Logo iot">
+
+     <nav class="topbar-nav"> 
+         <a href="index.html" class="accueil">Accueil</a>
+         <a href="découvrir.html" class="pages">Découvir</a>
+         <a href="services.html" class="services">Services</a>
+         <a href="contact.html" class="contactez-nous">Contactez-nous</a>       
+
+     </nav>
+     <nav class="topbar-nav-1"> 
+      <a href="https://fr-fr.facebook.com/" class="facebook"></a>
+      <a href="https://www.instagram.com/" class="instagram"></a>
+      <a href="https://fr.linkedin.com/" class="linkdin"></a>
+      <a href="https://twitter.com/" class="twitter"></a>
+      <a href="https://www.google.fr/" class="recherche"></a>
+  </nav>
+
+ </header>
+
+   <!--Deuxième bloc le corps -->
+
+ <div class="container site" > 
+  <!--On va y placer 3 blocs-->
+
+      <!--Première bloc va se placer au fond à gauche de la page, on y mettra des icônes svg suivus des liens -->
+      
+      <!--bloc 1 body -->
+      <div class="sidebar">    
+          
+          <a href="" class="active">Fil d'actualité</a>
+          <!-- Lien actif-->
+          <a href="" class="sidebar-messages">Messages</a>
+          <a href="" class="sidebar-evènement">Evènement</a>
+                      
+      </div>
+
+      <main class="main"> <!--Deuxième bloc central-->
+          
+          <article class="card"> <!--Contient 3 blocs -->
+             
+              <header class="card-header card-header-avatar"><!--Premier bloc-->
+              <div class="card-title">Contactez-nous</div>
+              <div class="card-sous-titre">Vos Coordonnées</div>
+             </header>
+             <br>
+
+             <div class="card-body"><!--Deuxième bloc-->
+                    <div id="after_submit"></div>
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                      <div class="row">
+                        <label class="required" for="name">Your name:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                        <span id="name_validation" class="error_message"></span>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <label class="required" for="email">Your email:</label><br />
+                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                        <span id="email_validation" class="error_message"></span>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <label class="required" for="message">Your message:</label><br />
+                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                        <span id="message_validation" class="error_message"></span>
+                      </div>  
+                      <br>
+                      <br>    
+                        <input id="submit_button" type="submit" value="Send email" />
+                    </form>     
+                    <br>
+                    <br>
+                    <br>
+                    <br>        
+              </div>
+          </article>
+          
+      </main>
+
+      <!-- La troisième bloc droit-->
+      <aside class="aside"> <!--Première colonnes-->
+          <article class="aside-body1">
+              <header class="card-header"><!--Premier bloc-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7309030743104!2d2.402747715717249!3d48.863341579287976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d84ef5e47a1%3A0xe9536adff1cbfd4f!2sLe%2019%2C%2019%20Rue%20des%20Lyanes%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1604061866953!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </header>
+           </article>     
+      </aside>
+ </div> 
+
+ <footer class="footer">
+     <a href="" class="footer-adresse"> 15 Rue Jean-Jacques du bois, 17500 Paris France</a>
+     <nav class="footer-nav"> 
+         <a href="" class="accueil">conditions générales</a>
+         <a href="" class="pages">Politique de Confidentialité</a>
+         <a href="" class="services">Polices</a>
+         <a href="" class="contactez-nous">Sitemap</a>       
+         <a href="" class="services">informationssur l'entreprise</a>
+         <a href="" class="contactez-nous">Préférences de cookies</a>
+     </nav>
+     <nav class="topbar-nav-1"> 
+      <a href="" class="facebook"></a>
+      <a href="" class="instagram"></a>
+      <a href="" class="linkdin"></a>
+      <a href="" class="twitter"></a>
+  </nav>
+
+  </footer>   
+
+</body>
+</html>
+<!--Vérifier le code avec w3c validator pour vérifier les erreurs-->
+<!--Dernière chose, vérifier que ca fonctionne dans différents navigateurs-->
